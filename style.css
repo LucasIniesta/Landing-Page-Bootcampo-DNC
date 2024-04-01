@@ -237,3 +237,63 @@ input[type="submit"] {
     footer #linha2 a:first-child {
         border-right: 2px solid white ;
     }
+
+/* Media Query */
+
+    @media screen and (max-width: 600px) {
+    
+    /* Menu */   
+        #principal{
+            flex-direction: column;
+            height: auto;
+        }
+        
+        #menu {
+            flex-direction: column;
+            width: 100%;
+            margin: 0px;
+        }
+
+        #menu a {
+            height: 50px;
+            align-items: center;
+        }
+
+        #principal button {
+            width: 100%;
+            margin-right: 0px;
+        }
+
+    /* section */
+        
+        section h1 {
+            font-size: 38;
+        }
+
+        section h2 {
+            font-size: 28px;
+            padding: 0px 15px 0px 15px;
+        }
+
+    /* form */
+
+        form {
+            width: 95%;
+            font-size: 20px;
+        }
+
+        #checkboxItens label {
+            font-size: 20px;
+        }
+
+    /* footer */
+    
+        footer #linha1 {
+            flex-direction: column;
+        }
+
+        footer #endereco {
+            width: 95%;
+            margin-bottom: 20px;
+        }
+}
