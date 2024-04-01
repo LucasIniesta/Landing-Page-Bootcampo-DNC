@@ -1,46 +1,95 @@
-#principal {
-    background-color: #303030;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #bababa;
-}
+/* Definição das variáveis */
+    :root{
+        --azulDnc: #0c70f2;
+        --pretoDnc: #303030;
+        --cinzaDnc: #c9c9c9;
+        --fontePadrao: 'Inter';
+        --cinzaHover: #ccc;
+    }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Inter", sans-serif;
-}
+/* Menu de navegação principal */
+    #principal {
+        background-color: var(--pretoDnc);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #bababa;
+    }
 
-#principal div a {
-    font-size: 25px;
-    font-weight: 600;
-    color: #FFF;
-    text-decoration: none;
-}
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-family: var(--fontePadrao);
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 20%, rgba(12, 112, 242, 0) 25%), #303030;
+        background-repeat: no-repeat;
+    }
 
-#menu {
-    display: flex;
-    width: 45%;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 5%;
-}
+    #principal div a {
+        font-size: 25px;
+        font-weight: 600;
+        color: #FFF;
+        text-decoration: none;
+    }
 
-#principal button {
-    margin-right: 5%;
-    background-color: #0c70f2;
-    border: 0px;
-    height: 40px;
-    width: 80px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #fff;
-    box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
-}
+    #menu {
+        display: flex;
+        width: 45%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5%;
+    }
 
-#principal div a:hover {
-    color: #CCC;    
-}
+    #principal button {
+        margin-right: 5%;
+        background-color: var(--azulDnc);
+        border: 0px;
+        height: 40px;
+        width: 80px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+        cursor: pointer;
+    }
+
+    #principal div a:hover {
+        color: var(--cinzaHover);    
+    }
+
+/* Seção prinicipal do site */
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    header {
+        color: #FFF;
+    }
+
+    header h1 {
+        font-weight: 800;
+        font-size: 80px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    header h2 {
+        font-weight: 700;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+
+    header .invert {
+        background-color: black;
+        font-weight: bold;
+        padding: 5px;
+    }
+
