@@ -27,7 +27,9 @@
 </div>
 <div>
   <h2>Implantação</h2>
-  <p>Deploy realizado pela plataforma Netlify. Clique no botão abaixo para acessar</p>
+  <p>Deploy realizado pela plataforma Netlify. Clique no link abaixo para acessar</p>
+  <a target="_blank" href="https://app.netlify.com/sites/landing-page-bootcamp-dnc/">Clique aqui!</a>
+  
 
   
   
